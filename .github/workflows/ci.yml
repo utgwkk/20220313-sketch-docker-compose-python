@@ -9,4 +9,4 @@ jobs:
       - uses: actions/checkout@v2
       - run: docker compose version
       - run: docker compose build
-      - run: docker compose --compatibility run --rm --no-deps app pytest -v
+      - run: docker compose --compatibility run --rm --no-deps -T app pytest -v
